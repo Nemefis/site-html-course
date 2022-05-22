@@ -11,20 +11,27 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header><!-- шапка -->
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="text-white text-center">Видео курс по вёрстке для начинающих HTML & CSS</h1>
-                    <!--кнопка видео-->
-                    <div class="play_button">
-                        <div class="play_button_triangle"></div>
-                    </div>
-                    <!--кнопка заказа-->
-                    <a href="#footer" class="btn btn-lg btn-buy text-uppercase">Заказать</a>
-                </div>
+    <!-- Header start -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-center text-white">
+              Видео курс по вёрстке для начинающих HTML & CSS
+            </h1>
+            <div
+              class="itd_play"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="itd_triangle"></div>
             </div>
+            <a href="#footer" class="btn btn-itd btn-lg text-uppercase"
+              >Заказать</a
+            >
+          </div>
         </div>
+      </div>
     </header>
     <!--о курсе-->
     <section class="course">
@@ -668,6 +675,58 @@
         </div>
       </div>
     </footer>
+ <!-- Modal Window -->
+ <div
+ class="modal fade"
+ id="exampleModal"
+ tabindex="-1"
+ aria-labelledby="exampleModalLabel"
+ aria-hidden="true"
+>
+ <div class="modal-dialog">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title" id="exampleModalLabel">
+         Трейлер видео курса по HTML и CSS
+       </h5>
+       <button
+         type="button"
+         class="btn-close"
+         data-bs-dismiss="modal"
+         aria-label="Close"
+       ></button>
+     </div>
+     <div class="modal-body">
+       <style>
+         .embed-container {
+           position: relative;
+           padding-bottom: 56.25%;
+           height: 0;
+           overflow: hidden;
+           max-width: 100%;
+         }
+         .embed-container iframe,
+         .embed-container object,
+         .embed-container embed {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+         }
+       </style>
+       <div class="embed-container">
+         <iframe
+           src="https://www.youtube.com/embed//bWNmJqgri4Q"
+           frameborder="0"
+           allowfullscreen
+         ></iframe>
+       </div>
+     </div>
+   </div>
+ </div>
+</div>
+
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
